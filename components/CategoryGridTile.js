@@ -8,7 +8,7 @@ const CategoryGridTile = ({ title, color }) => {
           styles.button,
           pressed ? styles.buttonPressed : null,
         ]}
-        android_ripple={{ color: "#ccc" }}>
+        android_ripple={{ color: "#f54442" }}>
         <View style={[styles.innerContainer, { backgroundColor: color }]}>
           <Text style={styles.title}>{title}</Text>
         </View>
@@ -25,8 +25,7 @@ const styles = StyleSheet.create({
     margin: 16,
     height: 150,
     borderRadius: 8,
-    elevation: 4, //android effect
-    //ios effects
+    elevation: 4,
     backgroundColor: "white",
     shadowColor: "black",
     shadowOpacity: 0.25,
